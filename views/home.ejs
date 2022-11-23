@@ -1,0 +1,15 @@
+    <%- include("partials/header") %>
+
+
+
+    <h1>Hello</h1>
+    <p><%= paraKind %></p>
+    
+   <% posts.forEach(function(post){ %>
+    <%  console.log(post.title) %>
+    <h1><%= post.title %></h1>
+    <p><%= post.content %></p>
+    <% }) %>
+
+    <%- include("partials/footer") %>
+    
